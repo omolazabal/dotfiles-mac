@@ -23,7 +23,11 @@ POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 # Time icon
 POWERLEVEL9K_TIME_FORMAT="%D{\uf017 %H:%M:%S}"
 
+# Move prompt to newline
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+
+# Change name/hostname format
+POWERLEVEL9K_CONTEXT_TEMPLATE="%n [`hostname`]"
 
 # Use awesome-font iconts
 POWERLEVEL9K_MODE="awesome-fontconfig"
