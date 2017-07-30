@@ -7,17 +7,30 @@ export ZSH=/home/oscar/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="bullet-train"
 
-BULLETTRAIN_PROMPT_ORDER=(
-  time
-  status
-  custom
-  context
-  dir
-  git
-  cmd_exec_time
-)
+
+# =================================== POWERLEVEL9K CUSTOMIZATION ===================================
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+# Prompt
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time ssh status root_indicator history time)
+
+# Path length
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
+
+# Time icon
+POWERLEVEL9K_TIME_FORMAT="%D{\uf017 %H:%M:%S}"
+
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+
+# Use awesome-font iconts
+POWERLEVEL9K_MODE="awesome-fontconfig"
+# ==================================================================================================
+
+# Set default user
+DEFAULT_USER="oscar"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -63,7 +76,11 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git extract command-not-found)
 
+# Source oh my zsh
 source $ZSH/oh-my-zsh.sh
+
+# Source font maps
+source ~/.fonts/*.sh
 
 # User configuration
 
@@ -93,13 +110,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Remove hostname from prompt
-prompt_context() {
-  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
-  fi
-}
 
 # Include Z
 . ~/.z.sh
