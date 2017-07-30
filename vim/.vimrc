@@ -11,6 +11,7 @@ Plugin 'tpope/vim-fugitive'                     " plugin on GitHub repo
 Plugin 'git://git.wincent.com/command-t.git'    " Git plugin not hosted on GitHub
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}      " The sparkup vim script
 Plugin 'joshdick/onedark.vim'                   " Onedark color theme
+Plugin 'vim-airline/vim-airline'                " Airline for vim
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -27,7 +28,7 @@ if &term =~ '256color'
     set t_ut=
 endif
 
-
+let g:airline_powerline_fonts = 1   " populate airline_symbols dictionary with powerline fonts
 syntax enable
 colorscheme onedark
 
