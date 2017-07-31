@@ -8,6 +8,6 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "One Dark Pro",
     "workbench.startupEditor": "newUntitledFile",
-    "terminal.integrated.fontFamily": "Droid Sans Mono Dotted for Powerline",
-    "terminal.integrated.fontSize": 16
+    "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
+    "terminal.integrated.fontSize": 14
 }
