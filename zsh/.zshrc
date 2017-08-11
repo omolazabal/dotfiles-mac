@@ -1,4 +1,6 @@
 
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 # Path to your oh-my-zsh installation.
 export ZSH=/home/oscar/.oh-my-zsh
 
@@ -44,3 +46,5 @@ source ~/.fonts/*.sh
 
 # Include Z
 . ~/.z.sh
+
+export PATH=$HOME/anaconda3/bin:$PATH
