@@ -1,5 +1,4 @@
 {
-    "matlab.mlintpath": "/usr/local/MATLAB/R2017a/bin/glnxa64/mlint",
     "python.linting.enabled": true,
     "window.zoomLevel": 0,
     "python.linting.pylintEnabled": false,
