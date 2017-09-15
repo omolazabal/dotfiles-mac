@@ -49,7 +49,6 @@ set number                      " always show line numbers
 set ignorecase                  " ignore case when searching
 set smartcase                   " ignore case if search pattern is all lowercase,
 set timeout timeoutlen=200 ttimeoutlen=100
-set visualbell                  " don't beep
 set noerrorbells                " don't beep
 set autowrite                   "Save on buffer switch
 set mouse=a
