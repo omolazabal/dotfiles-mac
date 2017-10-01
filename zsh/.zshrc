@@ -18,6 +18,7 @@ alias vconf="nvim ~/.config/nvim/init.vim"
 alias matlab="/Applications/MATLAB_R2017a.app/bin/matlab"
 alias cowsay="fortune | cowsay | lolcat"
 
+export PATH=$PATH:/usr/local/go/bin
 export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
 export PATH=$PATH:$HOME/anaconda/bin:/user/bin:/bin:/usr/sbin:/sbin
 export PATH="$PATH:$HOME/.rvm/bin"
