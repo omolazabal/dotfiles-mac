@@ -1,39 +1,23 @@
 
 set nocompatible                     " Disable vi-compatibility, required
 filetype off                         " required
-set rtp+=~/.vim/bundle/Vundle.vim    " set the runtime path to include Vundle and initialize
 
+call plug#begin('~/.local/share/nvim/plugged')
+Plug 'tpope/vim-fugitive'                     " plugin on GitHub repo
+Plug 'git://git.wincent.com/command-t.git'    " Git plugin not hosted on GitHub
+Plug 'rstacruz/sparkup', {'rtp': 'vim/'}      " The sparkup vim script
+Plug 'joshdick/onedark.vim'                   " Onedark color theme
+Plug 'vim-airline/vim-airline'                " Airline for vim
+call plug#end()            " required
 
-call vundle#begin()
+set termguicolors
 
-Plugin 'VundleVim/Vundle.vim'                   " let Vundle manage Vundle, required
-Plugin 'tpope/vim-fugitive'                     " plugin on GitHub repo
-Plugin 'git://git.wincent.com/command-t.git'    " Git plugin not hosted on GitHub
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}      " The sparkup vim script
-Plugin 'joshdick/onedark.vim'                   " Onedark color theme
-Plugin 'vim-airline/vim-airline'                " Airline for vim
-
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-
-if $COLORTERM == 'gnome-terminal'
-    " Enable 256 colors palette in Gnome Terminal
-    set t_Co=256
-endif
-
-if &term =~ '256color'
-    " Disable Background Color Erase (BCE) so that color schemes
-    " work properly when Vim is used inside tmux and GNU screen.
-    set t_ut=
-endif
-
-let g:airline_powerline_fonts = 1   " populate airline_symbols dictionary with powerline fonts
-syntax enable
+syntax on
 colorscheme onedark
 
+let g:airline_theme='onedark'
+let g:airline_powerline_fonts = 1   " populate airline_symbols dictionary with powerline fonts
 
-set background=dark
 set showmode                    " always show what mode we're currently editing in
 set nowrap                      " don't wrap lines
 set tabstop=4                   " a tab is four spaces
