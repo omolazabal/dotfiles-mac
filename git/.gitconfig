@@ -2,4 +2,4 @@
 	name = Oscar Olazabal
 	email = oscarolazabal@gmail.com
 [core]
-	excludesfile = /home/oscar/.gitignore_global
+	excludesfile = /Users/oscar/.gitignore_global
