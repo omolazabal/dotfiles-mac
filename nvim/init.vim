@@ -8,7 +8,8 @@ Plug 'git://git.wincent.com/command-t.git'    " Git plugin not hosted on GitHub
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}      " The sparkup vim script
 Plug 'joshdick/onedark.vim'                   " Onedark color theme
 Plug 'vim-airline/vim-airline'                " Airline for vim
-call plug#end()            " required
+Plug 'Valloric/YouCompleteMe'				  " Autocomplete
+call plug#end()
 
 set termguicolors
 
@@ -16,7 +17,7 @@ syntax on
 colorscheme onedark
 
 let g:airline_theme='onedark'
-let g:airline_powerline_fonts = 1   " populate airline_symbols dictionary with powerline fonts
+let g:airline_powerline_fonts = 1
 
 set showmode                    " always show what mode we're currently editing in
 set nowrap                      " don't wrap lines
@@ -32,7 +33,7 @@ set copyindent                  " copy the previous indentation on autoindenting
 set number                      " always show line numbers
 set ignorecase                  " ignore case when searching
 set smartcase                   " ignore case if search pattern is all lowercase,
-set timeout timeoutlen=200 ttimeoutlen=100
 set noerrorbells                " don't beep
 set autowrite                   "Save on buffer switch
 set mouse=a
+set timeout timeoutlen=200 ttimeoutlen=100
