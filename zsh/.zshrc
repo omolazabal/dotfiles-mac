@@ -1,5 +1,5 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export ZSH=/Users/oscar/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME=""
 DEFAULT_USER="oscar"
@@ -18,8 +18,8 @@ alias vconf="nvim ~/.config/nvim/init.vim"
 alias matlab="/Applications/MATLAB_R2017a.app/bin/matlab"
 alias cowsay="fortune | cowsay | lolcat"
 
-export PATH=$PATH:$HOME/anaconda/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
+export PATH=$PATH:$HOME/anaconda/bin:/user/bin:/bin:/usr/sbin:/sbin
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # Include Z
