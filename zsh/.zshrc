@@ -1,39 +1,27 @@
-
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export ZSH=/home/oscar/.oh-my-zsh
+export ZSH=/Users/oscar/.oh-my-zsh
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
-# Prompt
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time ssh status root_indicator history time)
-# Path length
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
-POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
-# Time icon
-POWERLEVEL9K_TIME_FORMAT="%D{\uf017 %H:%M:%S}"
-# Move prompt to newline
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-# Change name/hostname format
-POWERLEVEL9K_CONTEXT_TEMPLATE="%n [`hostname`]"
-# Use awesome-font iconts
-POWERLEVEL9K_MODE="awesome-fontconfig"
-
-# Set default user
+ZSH_THEME=""
 DEFAULT_USER="oscar"
-# Hyphen insensitive completion
 HYPHEN_INSENSITIVE="true"
-# Display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
-# Plugins
-plugins=(git extract command-not-found)
+plugins=(zsh-syntax-highlighting git extract)
 
-# Source oh my zsh
-source $ZSH/oh-my-zsh.sh
-# Source font maps
-source ~/.fonts/*.sh
+source $ZSH/oh-my-zsh.sh  # Oh my zsh
+source ~/.fonts/*.sh  # Font maps
+
+autoload -U promptinit; promptinit
+prompt pure
+
+alias v="nvim"
+alias vconf="nvim ~/.config/nvim/init.vim"
+alias matlab="/Applications/MATLAB_R2017a.app/bin/matlab"
+alias cowsay="fortune | cowsay | lolcat"
+
+export PATH=$PATH:$HOME/anaconda/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
+export PATH="$PATH:$HOME/.rvm/bin"
 
 # Include Z
 . ~/.z.sh
 
-export PATH=$HOME/anaconda3/bin:$PATH
-export PATH="$PATH:$HOME/.rvm/bin"
