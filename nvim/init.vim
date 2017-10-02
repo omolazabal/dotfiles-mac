@@ -3,21 +3,27 @@ set nocompatible                     " Disable vi-compatibility, required
 filetype off                         " required
 
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'tpope/vim-fugitive'                     " plugin on GitHub repo
-Plug 'git://git.wincent.com/command-t.git'    " Git plugin not hosted on GitHub
-Plug 'rstacruz/sparkup', {'rtp': 'vim/'}      " The sparkup vim script
+Plug 'scrooloose/nerdtree'					  " NERDTree
+Plug 'tpope/vim-fugitive'                     " Vim Fugitive - Git
+Plug 'ctrlpvim/ctrlp.vim'	                  " CtrlP
 Plug 'joshdick/onedark.vim'                   " Onedark color theme
 Plug 'vim-airline/vim-airline'                " Airline for vim
+Plug 'terryma/vim-multiple-cursors'		      " Multiple cursors
 Plug 'Valloric/YouCompleteMe'				  " Autocomplete
 call plug#end()
 
 set termguicolors
-
 syntax on
 colorscheme onedark
+hi LineNr guibg=#181921
 
 let g:airline_theme='onedark'
 let g:airline_powerline_fonts = 1
+
+" start NERDTree if no file is specified or if a directory is specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
 set showmode                    " always show what mode we're currently editing in
 set nowrap                      " don't wrap lines
@@ -37,3 +43,4 @@ set noerrorbells                " don't beep
 set autowrite                   "Save on buffer switch
 set mouse=a
 set timeout timeoutlen=200 ttimeoutlen=100
+
