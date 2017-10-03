@@ -10,6 +10,7 @@ Plug 'joshdick/onedark.vim'                   " Onedark color theme
 Plug 'vim-airline/vim-airline'                " Airline for vim
 Plug 'terryma/vim-multiple-cursors'		      " Multiple cursors
 Plug 'Valloric/YouCompleteMe'				  " Autocomplete
+Plug 'Yggdroot/indentLine'					  " Indent line
 call plug#end()
 
 set termguicolors
@@ -19,12 +20,15 @@ hi LineNr guibg=#181921
 
 let g:airline_theme='onedark'
 let g:airline_powerline_fonts = 1
+let g:indentLine_color_gui = "#484b53"
+let g:indentLine_char = '┆'
 
 " start NERDTree if no file is specified or if a directory is specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
+set relativenumber
 set showmode                    " always show what mode we're currently editing in
 set nowrap                      " don't wrap lines
 set tabstop=4                   " a tab is four spaces
