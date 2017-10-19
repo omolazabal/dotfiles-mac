@@ -1,36 +1,45 @@
 {
+    // Editor
     "editor.lineNumbers": "relative",
+
+    // Window
     "window.zoomLevel": 0,
     "window.restoreWindows": "none",
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#2d6141",
-        "statusBar.noFolderBackground": "#2d6141",
-        "statusBar.debuggingBackground": "#2d6141"
-    },
 
-    "python.linting.maxNumberOfProblems": 1000,
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-
+    // Workbench
     "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "One Dark Pro",
     "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.tabCloseButton": "left",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#325a41",
+        "statusBar.noFolderBackground": "#325a41",
+        "statusBar.debuggingBackground": "#325a41"
+    },
 
+    // Terminal
     "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
     "terminal.integrated.fontSize": 14,
     "terminal.external.osxExec": "iTerm.app",
     "terminal.explorerKind": "external",
 
-    "matlab.mlintpath": "/Applications/MATLAB_R2017a.app/bin/maci64/mlint",
+    // Python
+    "python.linting.maxNumberOfProblems": 1000,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
     "python.linting.flake8Path": "/Users/oscar/anaconda/bin/flake8",
 
+    // Matlab
+    "matlab.mlintpath": "/Applications/MATLAB_R2017a.app/bin/maci64/mlint",
+
+    // Vim
     "vim.disableAnnoyingNeovimMessage": true,
     "vim.statusBarColorControl": true,
     "vim.statusBarColors": {
-        "normal": "#2d6141",
-        "insert": "#1f3183",
-        "visual": "#5e2b72",
+        "normal": "#325a41",
+        "insert": "#2b3666",
+        "visual": "#50335c",
         "visualline": "#005f87",
         "visualblock": "#86592d",
         "replace": "#000000"
