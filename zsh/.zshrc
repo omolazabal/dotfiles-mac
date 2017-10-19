@@ -13,10 +13,11 @@ source ~/.fonts/*.sh  # Font maps
 autoload -U promptinit; promptinit
 prompt pure
 
+alias c="code"
 alias v="nvim"
 alias vconf="nvim ~/.config/nvim/init.vim"
+alias zconf="nvim ~/.zshrc"
 alias matlab="/Applications/MATLAB_R2017a.app/bin/matlab"
-alias cowsay="fortune | cowsay | lolcat"
 
 export PATH=$PATH:/usr/local/go/bin
 export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
