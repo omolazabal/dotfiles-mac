@@ -8,7 +8,7 @@
 
     // Workbench
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Gruvbox Dark (Medium)",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editor.tabCloseButton": "left",
     "workbench.colorCustomizations": {
