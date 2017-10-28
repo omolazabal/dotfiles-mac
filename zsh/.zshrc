@@ -1,3 +1,4 @@
+
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
 
@@ -8,13 +9,14 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(zsh-syntax-highlighting git extract)
 
 source $ZSH/oh-my-zsh.sh  # Oh my zsh
-source ~/.fonts/*.sh  # Font maps
+source ~/.fonts/*.sh      # Font maps
 
 autoload -U promptinit; promptinit
 prompt pure
 
 alias c="code"
 alias v="nvim"
+alias m="mvim"
 alias vconf="nvim ~/.config/nvim/init.vim"
 alias zconf="nvim ~/.zshrc"
 alias matlab="/Applications/MATLAB_R2017a.app/bin/matlab"
