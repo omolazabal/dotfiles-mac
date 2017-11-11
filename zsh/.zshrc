@@ -14,6 +14,7 @@ source ~/.fonts/*.sh      # Font maps
 autoload -U promptinit; promptinit
 prompt pure
 
+alias runc++="touch run.sh; echo 'clang++ \$1\n./a.out\nrm *.out' >> run.sh"
 alias c="code"
 alias v="nvim"
 alias m="mvim"
