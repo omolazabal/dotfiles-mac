@@ -1,25 +1,17 @@
-import os
-import ycm_core
 
-flags = [
+FLAGS = [
     '-Wall',
     '-Wextra',
-    '-Werror',
-    '-Wno-long-long',
-    '-Wno-variadic-macros',
+    '-Wconversion',
     '-fexceptions',
     '-ferror-limit=10000',
     '-DNDEBUG',
-    '-x',
-    'c++',
-    '-isystem/usr/include/',
-]
-
-SOURCE_EXTENSIONS = ['.cpp', '.cxx', '.cc', '.c', ]
+    '-xc++',
+    '-std=c++14',
+    ]
 
 
 def FlagsForFile(filename, **kwargs):
     return {
-        'flags': flags,
-        'do_cache': True
+        'flags': FLAGS
     }
