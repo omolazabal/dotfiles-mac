@@ -42,6 +42,7 @@ set autowrite
 set mouse=a
 set splitbelow
 set splitright
+set completeopt-=preview
 set visualbell t_vb=
 set guifont=Meslo\ LG\ S\ for\ Powerline:h12
 set guioptions=
@@ -64,8 +65,8 @@ let g:syntastic_check_on_wq = 0
 
 " YouCompleteMe
 let g:ycm_always_populate_location_list = 1
-let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'  "where to search for .ycm_extra_conf.py if not found
 let g:ycm_confirm_extra_conf = 1
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 
 " Airline
 let g:airline_powerline_fonts = 1
