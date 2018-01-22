@@ -34,7 +34,6 @@
     "matlab.mlintpath": "/Applications/MATLAB_R2017a.app/bin/maci64/mlint",
 
     // Vim
-    "vim.disableAnnoyingNeovimMessage": true,
     "vim.statusBarColorControl": true,
     "vim.statusBarColors": {
         "normal": "#325a41",
