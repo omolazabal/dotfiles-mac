@@ -19,22 +19,14 @@ source ~/.z.sh            # z Command
 autoload -U promptinit; promptinit
 prompt pure
 
-alias c="code"
-alias v="nvim"
-alias m="mvim"
+alias v="mvim"
 alias top="htop"
 alias vconf="nvim ~/.config/nvim/init.vim"
 alias zconf="nvim ~/.zshrc"
 alias hs="history | grep"
+alias c="clear"
 
-runc++ () {
-    touch run.sh
-    echo "clang++ -std=c++14 \$1\n./a.out\nrm *.out" >> run.sh
-    chmod +x run.sh
-}
-
-mkcd() {
-    mkdir $1
-    cd $1
-}
+mcd()   { mkdir $1; cd $1; }
+cll()    { cd $1; ll; }
+backup() { cp $1{,.bak}; }
 
