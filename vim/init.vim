@@ -1,7 +1,6 @@
 
 "=================================== Plugins =================================="
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'vim-syntastic/syntastic'                " Syntax Checker
 Plug 'Valloric/YouCompleteMe'                 " Auto-completion
 Plug 'airblade/vim-gitgutter'                 " Git info on gutter
 Plug 'tpope/vim-fugitive'                     " Git integration
@@ -55,11 +54,6 @@ colorscheme onedark
 
 
 "=============================== Plugin Settings =============================="
-" Syntastic
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
 " YouCompleteMe
 let g:ycm_always_populate_location_list = 1
 let g:ycm_confirm_extra_conf = 1
@@ -75,7 +69,6 @@ let g:lt_quickfix_list_toggle_map = '<leader>q'
 
 "================================= Key Remaps ================================="
 " Plugin Commands
-nnoremap <tab> :NERDTreeToggle<CR>
 nnoremap <F1> :Gstatus<CR>
 nnoremap <F2> :Gcommit<CR>
 nnoremap <F3> :Gdiff<CR>
