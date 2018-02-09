@@ -26,7 +26,7 @@ alias zconf="nvim ~/.zshrc"
 alias hs="history | grep"
 alias c="clear"
 
-mcd()   { mkdir $1; cd $1; }
-cll()    { cd $1; ll; }
+mc()     { mkdir $1; cd $1; }
+cl()     { cd $1; ll; }
 backup() { cp $1{,.bak}; }
 
