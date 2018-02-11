@@ -17,7 +17,6 @@ call plug#end()
 
 "================================ Vim Settings ================================"
 set nocompatible
-filetype off
 set termguicolors
 set background=dark
 set relativenumber
@@ -47,8 +46,12 @@ set visualbell t_vb=
 set guifont=Meslo\ LG\ S\ for\ Powerline:h12
 set guioptions=
 set guitablabel=\[%N\]\ %t\ %M
+
+autocmd BufRead *.asm set syntax=nasm
 autocmd BufEnter * sign define dummy
 autocmd BufEnter * execute 'sign place 9999 line=1 name=dummy buffer=' . bufnr('')
+
+filetype plugin on
 syntax enable
 colorscheme onedark
 
@@ -66,6 +69,17 @@ let g:airline_powerline_fonts = 1
 let g:lt_location_list_toggle_map = '<leader>l'
 let g:lt_quickfix_list_toggle_map = '<leader>q'
 
+" CtrlP
+let g:ctrlp_prompt_mappings = {
+    \ 'ToggleType(1)':        ['<c-h>', '<c-up>'],
+    \ 'ToggleType(-1)':       ['<c-l>', '<c-down>'],
+    \ 'PrtCurLeft()':         ['<left>', '<c-^>'],
+    \ 'PrtCurRight()':        ['<right>'],
+    \ 'CreateNewFile()':      ['<c-n>'],
+    \ 'AcceptSelection("v")': ['<c-s>'],
+    \ 'AcceptSelection("h")': ['<c-x>'],
+    \ 'PrtHistory(-1)':       ['<c-y>']
+    \ }
 
 "================================= Key Remaps ================================="
 " Plugin Commands
