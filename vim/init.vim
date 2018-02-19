@@ -83,13 +83,6 @@ let g:ctrlp_prompt_mappings = {
     \ }
 
 "================================= Key Remaps ================================="
-" Plugin Commands
-nnoremap <F1> :Gstatus<CR>
-nnoremap <F2> :Gcommit<CR>
-nnoremap <F3> :Gdiff<CR>
-nnoremap <F4> :Gpush<CR>
-nnoremap <F5> :Gpull<CR>
-
 " Vim Commands
 nmap <tab> gt
 nmap <s-tab> gT
@@ -97,7 +90,7 @@ nnoremap <C-j> <C-w><C-j>
 nnoremap <C-k> <C-w><C-k>
 nnoremap <C-l> <C-w><C-l>
 nnoremap <C-h> <C-w><C-h>
-nnoremap <F12> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
-nnoremap <F11> :set spell!<CR>
-nnoremap <F10> :SemanticHighlightToggle<CR>
+nnoremap <F1> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+nnoremap <F2> :set spell!<CR>
+nnoremap <F3> :SemanticHighlightToggle<CR>
 
