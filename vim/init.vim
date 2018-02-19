@@ -48,6 +48,7 @@ set guioptions=
 set guitablabel=\[%N\]\ %t\ %M
 
 autocmd BufRead *.asm set syntax=nasm
+autocmd BufRead *.md set wrap linebreak nolist
 autocmd BufEnter * sign define dummy
 autocmd BufEnter * execute 'sign place 9999 line=1 name=dummy buffer=' . bufnr('')
 
@@ -86,6 +87,8 @@ let g:ctrlp_prompt_mappings = {
 nnoremap <F1> :Gstatus<CR>
 nnoremap <F2> :Gcommit<CR>
 nnoremap <F3> :Gdiff<CR>
+nnoremap <F4> :Gpush<CR>
+nnoremap <F5> :Gpull<CR>
 
 " Vim Commands
 nmap <tab> gt
@@ -95,7 +98,6 @@ nnoremap <C-k> <C-w><C-k>
 nnoremap <C-l> <C-w><C-l>
 nnoremap <C-h> <C-w><C-h>
 nnoremap <F12> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
-nnoremap <F11> :retab<CR>
-nnoremap <F4> :SemanticHighlightToggle<CR>
-nnoremap <F5> :set spell!<CR>
+nnoremap <F11> :set spell!<CR>
+nnoremap <F10> :SemanticHighlightToggle<CR>
 
