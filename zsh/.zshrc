@@ -21,8 +21,8 @@ prompt pure
 
 alias v="mvim"
 alias top="htop"
-alias vconf="nvim ~/.config/nvim/init.vim"
-alias zconf="nvim ~/.zshrc"
+alias vconf="vim ~/.config/nvim/init.vim"
+alias zconf="vim ~/.zshrc"
 alias hs="history | grep"
 alias c="clear"
 
