@@ -1,6 +1,6 @@
 
 "=================================== Plugins =================================="
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('~/.vim/plugged')
 Plug 'Valloric/YouCompleteMe'                 " Auto-completion
 Plug 'airblade/vim-gitgutter'                 " Git info on gutter
 Plug 'tpope/vim-fugitive'                     " Git integration
@@ -11,7 +11,9 @@ Plug 'terryma/vim-multiple-cursors'           " Multiple cursors
 Plug 'vim-airline/vim-airline-themes'         " Status bar themes
 Plug 'flazz/vim-colorschemes'                 " Color schemes
 Plug 'Valloric/ListToggle'                    " Toggle location list
-Plug 'jaxbot/semantic-highlight.vim'              " Semantic highlighting
+Plug 'jaxbot/semantic-highlight.vim'          " Semantic highlighting
+Plug 'xolox/vim-notes'                        " Note taking
+Plug 'xolox/vim-misc'                         " Dependencies for xolox plug-ins
 call plug#end()
 
 
@@ -81,6 +83,8 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("h")': ['<c-x>'],
     \ 'PrtHistory(-1)':       ['<c-y>']
     \ }
+
+let g:notes_directories = ['~/Documents/notes']
 
 "================================= Key Remaps ================================="
 " Vim Commands
