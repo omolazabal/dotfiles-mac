@@ -18,12 +18,27 @@ call plug#end()
 
 
 "================================ Vim Settings ================================"
-set nocompatible
-set termguicolors
+filetype plugin on
+
+" Visual
+syntax enable
+colorscheme onedark
 set background=dark
+set colorcolumn=80
+set number
 set relativenumber
+set cursorline
+set termguicolors
+set guifont=Meslo\ LG\ S\ for\ Powerline:h12
+highlight Comment gui=italic
+
+" Editor
+set nocompatible
 set showmode
 set nowrap
+set smartindent
+set copyindent
+set breakindent
 set expandtab
 set tabstop=4
 set smarttab
@@ -32,9 +47,6 @@ set softtabstop=4
 set shiftwidth=4
 set shiftround
 set backspace=indent,eol,start
-set autoindent
-set copyindent
-set number
 set ignorecase
 set smartcase
 set noerrorbells
@@ -45,18 +57,15 @@ set splitright
 set scrolloff=5
 set completeopt-=preview
 set visualbell t_vb=
-set guifont=Meslo\ LG\ S\ for\ Powerline:h12
+set hlsearch
 set guioptions=
 set guitablabel=\[%N\]\ %t\ %M
 
+" Auto Commands
 autocmd BufRead *.asm set syntax=nasm
-autocmd BufRead *.md set wrap linebreak nolist
+autocmd BufNewFile,BufRead *.md,*.txt set wrap linebreak nolist
 autocmd BufEnter * sign define dummy
 autocmd BufEnter * execute 'sign place 9999 line=1 name=dummy buffer=' . bufnr('')
-
-filetype plugin on
-syntax enable
-colorscheme onedark
 
 
 "=============================== Plugin Settings =============================="
@@ -74,8 +83,8 @@ let g:lt_quickfix_list_toggle_map = '<leader>q'
 
 " CtrlP
 let g:ctrlp_prompt_mappings = {
-    \ 'ToggleType(1)':        ['<c-h>', '<c-up>'],
-    \ 'ToggleType(-1)':       ['<c-l>', '<c-down>'],
+    \ 'ToggleType(1)':        ['<c-l>', '<c-up>'],
+    \ 'ToggleType(-1)':       ['<c-h>', '<c-down>'],
     \ 'PrtCurLeft()':         ['<left>', '<c-^>'],
     \ 'PrtCurRight()':        ['<right>'],
     \ 'CreateNewFile()':      ['<c-n>'],
@@ -84,7 +93,10 @@ let g:ctrlp_prompt_mappings = {
     \ 'PrtHistory(-1)':       ['<c-y>']
     \ }
 
+" Vim Notes
 let g:notes_directories = ['~/Documents/notes']
+let g:notes_suffix = '.txt'
+
 
 "================================= Key Remaps ================================="
 " Vim Commands
