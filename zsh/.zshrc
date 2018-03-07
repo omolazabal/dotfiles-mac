@@ -1,6 +1,6 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
-export PATH=$PATH:$HOME/anaconda/bin:/user/bin:/bin:/usr/sbin:/sbin
+export PATH=$HOME/anaconda3/bin:$PATH
 export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
 export PATH=$PATH:/usr/local/go/bin
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -21,8 +21,8 @@ prompt pure
 
 alias v="mvim"
 alias top="htop"
-alias vconf="vim ~/.vimrc"
-alias zconf="vim ~/.zshrc"
+alias vconf="mvim ~/.vimrc"
+alias zconf="mvim ~/.zshrc"
 alias hs="history | grep"
 alias c="clear"
 
