@@ -1,7 +1,6 @@
 
 "=================================== Plugins =================================="
 call plug#begin('~/.vim/plugged')
-Plug 'Valloric/YouCompleteMe'                 " Auto-completion
 Plug 'airblade/vim-gitgutter'                 " Git info on gutter
 Plug 'tpope/vim-fugitive'                     " Git integration
 Plug 'tpope/vim-commentary'                   " Quick Commenting
@@ -10,10 +9,11 @@ Plug 'vim-airline/vim-airline'                " Status bar
 Plug 'terryma/vim-multiple-cursors'           " Multiple cursors
 Plug 'vim-airline/vim-airline-themes'         " Status bar themes
 Plug 'flazz/vim-colorschemes'                 " Color schemes
+Plug 'tomasiser/vim-code-dark'                " VSCode theme
 Plug 'Valloric/ListToggle'                    " Toggle location list
-Plug 'jaxbot/semantic-highlight.vim'          " Semantic highlighting
 Plug 'xolox/vim-notes'                        " Note taking
 Plug 'xolox/vim-misc'                         " Dependencies for xolox plug-ins
+Plug 'scrooloose/nerdtree'                    " NerdTree
 call plug#end()
 
 
@@ -63,16 +63,15 @@ set guitablabel=\[%N\]\ %t\ %M
 
 " Auto Commands
 autocmd BufRead *.asm set syntax=nasm
+autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead *.md,*.txt set wrap linebreak nolist
 autocmd BufEnter * sign define dummy
 autocmd BufEnter * execute 'sign place 9999 line=1 name=dummy buffer=' . bufnr('')
 
 
 "=============================== Plugin Settings =============================="
-" YouCompleteMe
-let g:ycm_always_populate_location_list = 1
-let g:ycm_confirm_extra_conf = 1
-let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+"NerdTree
+nmap <Tab> :NERDTreeToggle<CR>
 
 " Airline
 let g:airline_powerline_fonts = 1
@@ -100,13 +99,8 @@ let g:notes_suffix = '.txt'
 
 "================================= Key Remaps ================================="
 " Vim Commands
-nmap <tab> gt
-nmap <s-tab> gT
-nnoremap <C-j> <C-w><C-j>
-nnoremap <C-k> <C-w><C-k>
-nnoremap <C-l> <C-w><C-l>
-nnoremap <C-h> <C-w><C-h>
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
 nnoremap <F1> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 nnoremap <F2> :set spell!<CR>
-nnoremap <F3> :SemanticHighlightToggle<CR>
 
