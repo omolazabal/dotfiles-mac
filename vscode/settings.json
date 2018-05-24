@@ -7,34 +7,34 @@
     "window.restoreWindows": "none",
 
     // Workbench
+    "workbench.colorTheme": "Visual Studio Dark",
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Atom One Dark",
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.startupEditor": "none",
     "workbench.editor.tabCloseButton": "left",
     "workbench.colorCustomizations": {
         "statusBar.background": "#325a41",
         "statusBar.noFolderBackground": "#325a41",
-        "statusBar.debuggingBackground": "#325a41"
+        "statusBar.debuggingBackground": "#325a41",
+        "terminal.background": "#19191e"
     },
 
     // Terminal
     "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.fontWeight": "normal",
     "terminal.external.osxExec": "iTerm.app",
     "terminal.explorerKind": "external",
 
     // Python
-    "python.linting.maxNumberOfProblems": 1000,
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Path": "/Users/oscar/anaconda/bin/flake8",
+    "python.linting.enabled": false,
 
     // Matlab
     "matlab.mlintpath": "/Applications/MATLAB_R2017a.app/bin/maci64/mlint",
 
     // Vim
     "vim.statusBarColorControl": true,
+    "vim.cmdLineInitialColon": true,
     "vim.statusBarColors": {
         "normal": "#325a41",
         "insert": "#2b3666",
@@ -42,5 +42,8 @@
         "visualline": "#005f87",
         "visualblock": "#86592d",
         "replace": "#000000"
-    }
+    },
+
+    // Files
+    "files.autoSave": "afterDelay",
 }
