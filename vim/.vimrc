@@ -11,9 +11,8 @@ Plug 'vim-airline/vim-airline-themes'         " Status bar themes
 Plug 'flazz/vim-colorschemes'                 " Color schemes
 Plug 'tomasiser/vim-code-dark'                " VSCode theme
 Plug 'Valloric/ListToggle'                    " Toggle location list
-Plug 'xolox/vim-notes'                        " Note taking
-Plug 'xolox/vim-misc'                         " Dependencies for xolox plug-ins
 Plug 'scrooloose/nerdtree'                    " NerdTree
+Plug 'vim-syntastic/syntastic'                " Syntastic
 call plug#end()
 
 
@@ -92,9 +91,15 @@ let g:ctrlp_prompt_mappings = {
     \ 'PrtHistory(-1)':       ['<c-y>']
     \ }
 
-" Vim Notes
-let g:notes_directories = ['~/Documents/notes']
-let g:notes_suffix = '.txt'
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_cpp_compiler_options = '-std=c++14'
 
 
 "================================= Key Remaps ================================="
