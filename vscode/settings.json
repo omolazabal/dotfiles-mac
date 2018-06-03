@@ -5,10 +5,7 @@
     // Window
     "window.zoomLevel": 0,
     "window.restoreWindows": "none",
-
-    // Workbench
-    "workbench.colorTheme": "Visual Studio Dark",
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "eq-material-theme-icons-darker",
     "workbench.startupEditor": "none",
     "workbench.editor.tabCloseButton": "left",
     "workbench.colorCustomizations": {
@@ -46,4 +43,5 @@
 
     // Files
     "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "One Dark Pro",
 }
