@@ -7,6 +7,8 @@ ln -s zsh/.zshrc-Darwin ~/.zshrc-Darwin
 OS="`uname`"
 case $OS in
     'Linux')
+        rm ~/.config/Code/User/setting.json
+        rm ~/.config/Code/User/keybindings.json
         ln -s vscode/settings.json ~/.config/Code/User/settings.json
         ln -s vscode/keybindings.json ~/.config/Code/User/keybindings.json
 
@@ -24,6 +26,8 @@ case $OS in
         tmux source ~/.tmux.conf
         ;;
     'Darwin')
+        rm ~/Library/Application\ Support/Code/User/settings.json
+        rm ~/Library/Application\ Support/Code/User/keybindings.json
         ln -s vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
         ln -s vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 
