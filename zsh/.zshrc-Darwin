@@ -1,0 +1,13 @@
+
+# Exports
+export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
+export PATH=$PATH:/usr/local/go/bin
+export PATH="$PATH:$HOME/.rvm/bin"
+export PATH=/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin:$PATH
+
+# Alias
+alias v="mvim"
+alias vconf="mvim ~/.vimrc"
+alias zconf="mvim ~/.zshrc"
+alias tconf="mvim ~/.tmux.conf"
+
