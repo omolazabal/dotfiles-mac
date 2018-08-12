@@ -25,8 +25,11 @@ set colorcolumn=80
 set number
 set relativenumber
 set cursorline
-set termguicolors
-set guifont=Meslo\ LG\ S\ for\ Powerline:h12
+if has('mac')
+    set guifont=Meslo\ LG\ S\ for\ Powerline:h12
+elseif has('unix')
+    set guifont=Meslo\ LG\ S\ for\ Powerline\ 12
+endif
 highlight Comment gui=italic
 
 " Editor

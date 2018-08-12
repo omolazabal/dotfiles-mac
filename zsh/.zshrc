@@ -40,5 +40,5 @@ cl()     { cd $1; ll; }
 backup() { cp $1{,.bak}; }
 
 # System specific
-source "${ZDOTDIR:-${HOME}}/.zshrc-`uname`"#
+source "${ZDOTDIR:-${HOME}}/.zshrc-`uname`"
 
