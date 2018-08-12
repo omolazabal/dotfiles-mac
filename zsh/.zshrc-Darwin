@@ -1,5 +1,6 @@
 
 # Exports
+export PATH=$HOME/anaconda3/bin:$PATH
 export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
 export PATH=$PATH:/usr/local/go/bin
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -9,5 +10,7 @@ export PATH=/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin:$PAT
 alias v="mvim"
 alias vconf="mvim ~/.vimrc"
 alias zconf="mvim ~/.zshrc"
+alias lzconf="mvim ~/.zshrc-Linux"
+alias mzconf="mvim ~/.zshrc-Darwin"
 alias tconf="mvim ~/.tmux.conf"
 

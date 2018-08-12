@@ -1,2 +1,4 @@
-# dotfiles
-My dotfiles
+git
+npm
+vscode
+zsh syntax highlighting

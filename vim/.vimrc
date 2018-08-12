@@ -28,7 +28,7 @@ set cursorline
 if has('mac')
     set guifont=Meslo\ LG\ S\ for\ Powerline:h12
 elseif has('unix')
-    set guifont=Meslo\ LG\ S\ for\ Powerline\ 12
+    set guifont=Meslo\ LG\ S\ for\ Powerline\ 10
 endif
 highlight Comment gui=italic
 
