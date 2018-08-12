@@ -42,6 +42,8 @@ alias c="clear"
 alias vconf="mvim ~/.vimrc"
 alias zconf="mvim ~/.zshrc"
 alias tconf="mvim ~/.tmux.conf"
+alias thw="less ~/.tmux/help/windows"
+alias thp="less ~/.tmux/help/panes"
 
 # Functions
 mc()     { mkdir $1; cd $1; }

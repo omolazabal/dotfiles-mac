@@ -9,10 +9,8 @@ Plug 'vim-airline/vim-airline'                " Status bar
 Plug 'terryma/vim-multiple-cursors'           " Multiple cursors
 Plug 'vim-airline/vim-airline-themes'         " Status bar themes
 Plug 'flazz/vim-colorschemes'                 " Color schemes
-Plug 'tomasiser/vim-code-dark'                " VSCode theme
 Plug 'Valloric/ListToggle'                    " Toggle location list
 Plug 'scrooloose/nerdtree'                    " NerdTree
-Plug 'vim-syntastic/syntastic'                " Syntastic
 call plug#end()
 
 
@@ -91,21 +89,13 @@ let g:ctrlp_prompt_mappings = {
     \ 'PrtHistory(-1)':       ['<c-y>']
     \ }
 
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_cpp_compiler_options = '-std=c++14'
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 
 "================================= Key Remaps ================================="
 " Vim Commands
-nmap <S-Enter> O<Esc>
-nmap <CR> o<Esc>
+nnoremap <leader>p "+p
+nnoremap <leader>y "+y
 nnoremap <F1> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 nnoremap <F2> :set spell!<CR>
 
