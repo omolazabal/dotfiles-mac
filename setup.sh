@@ -1,11 +1,12 @@
 ln -s tmux/.tmux.conf ~/.tmux.conf
 ln -s vim/.vimrc ~/.vimrc
 ln -s zsh/.zshrc ~/.zshrc
+ln -s zsh/.zshrc-Linux ~/.zshrc-Linux
+ln -s zsh/.zshrc-Darwin ~/.zshrc-Darwin
 
 OS="`uname`"
 case $OS in
     'Linux')
-        ln -s zsh/.zshrc-Linux ~/.zshrc-Linux
         ln -s vscode/settings.json ~/.config/Code/User/settings.json
         ln -s vscode/keybindings.json ~/.config/Code/User/keybindings.json
 
@@ -23,7 +24,6 @@ case $OS in
         tmux source ~/.tmux.conf
         ;;
     'Darwin')
-        ln -s zsh/.zshrc-Darwin ~/.zshrc-Darwin
         ln -s vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
         ln -s vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 
