@@ -24,14 +24,10 @@ source $ZSH/oh-my-zsh.sh
 autoload -U promptinit; promptinit
 prompt pure
 
-# Start tmux
-if command -v tmux>/dev/null; then
-  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux new-session -A -s main
-fi
-
 # Alias
 alias top="htop"
 alias c="clear"
+alias tmux-attach="tmux new-session -A -s main"
 
 # Functions
 mc()     { mkdir $1; cd $1; }
