@@ -2,6 +2,7 @@
 # Exports
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
+export PATH=$HOME/anaconda3/bin:$PATH
 
 # Plugins
 ZSH_THEME=""

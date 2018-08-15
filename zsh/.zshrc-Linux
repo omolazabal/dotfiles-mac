@@ -3,7 +3,8 @@
 alias v="gvim"
 alias vconf="gvim ~/.vimrc"
 alias zconf="gvim ~/.zshrc"
-alias lzconf="gvim ~/.zshrc-Linux"
-alias mzconf="gvim ~/.zshrc-Darwin"
+alias zconf-linux="gvim ~/.zshrc-Linux"
+alias zconf-darwin="gvim ~/.zshrc-Darwin"
 alias tconf="gvim ~/.tmux.conf"
+alias matlab="matlab -nodesktop"
 

@@ -97,8 +97,5 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 "================================= Key Remaps ================================="
 " Vim Commands
-nnoremap <leader>p "+p
-nnoremap <leader>y "+y
 nnoremap <F1> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 nnoremap <F2> :set spell!<CR>
-
