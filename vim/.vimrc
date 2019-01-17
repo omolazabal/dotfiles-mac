@@ -62,6 +62,10 @@ set guioptions=
 set guitablabel=\[%N\]\ %t\ %M
 
 " Auto Commands
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType css setlocal shiftwidth=2 tabstop=2
+autocmd FileType php setlocal shiftwidth=2 tabstop=2
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd BufRead *.asm set syntax=nasm
 autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead *.md,*.txt set wrap linebreak nolist
@@ -91,7 +95,7 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("h")': ['<c-x>'],
     \ 'PrtHistory(-1)':       ['<c-y>']
     \ }
-
+let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 

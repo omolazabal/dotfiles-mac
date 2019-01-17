@@ -3,6 +3,8 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
 export PATH=$HOME/anaconda3/bin:$PATH
+export PATH=$HOME/flutter/bin:$PATH
+export PATH=$PATH:/usr/local/mysql/bin
 
 # Plugins
 ZSH_THEME=""

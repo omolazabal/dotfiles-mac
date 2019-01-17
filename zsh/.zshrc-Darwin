@@ -4,6 +4,8 @@ export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
 export PATH=$PATH:/usr/local/go/bin
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH=/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin:$PATH
+export PATH=/Library/Frameworks/R.framework/Resources/bin/:$PATH
+export PATH=/Applications/MATLAB_R2018a.app/bin/:$PATH
 
 # Alias
 alias v="mvim"
@@ -12,5 +14,4 @@ alias zconf="mvim ~/.zshrc"
 alias zconf-linux="mvim ~/.zshrc-Linux"
 alias zconf-darwin="mvim ~/.zshrc-Darwin"
 alias tconf="mvim ~/.tmux.conf"
-alias matlab="/Applications/MATLAB_R2018a.app/bin/matlab -nodesktop"
 

@@ -5,9 +5,8 @@
     // Window
     "window.zoomLevel": 0,
     "window.restoreWindows": "none",
-    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "none",
-    "workbench.editor.tabCloseButton": "left",
     "workbench.colorCustomizations": {
         "statusBar.background": "#325a41",
         "statusBar.noFolderBackground": "#325a41",
@@ -44,4 +43,8 @@
     // Files
     "files.autoSave": "afterDelay",
     "workbench.colorTheme": "One Dark Pro",
+    "editor.minimap.enabled": false,
+    "python.condaPath": "~/anaconda3/bin/python",
+    "ai.azureml.enable": false,
+    "ai.homepage.openOnStartup": false,
 }
