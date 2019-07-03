@@ -1,10 +1,22 @@
 
 # Exports
+export PATH=$PATH:~/.local/bin
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
-export PATH=$HOME/anaconda3/bin:$PATH
-export PATH=$HOME/flutter/bin:$PATH
+
+export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
+export PATH=$PATH:/usr/local/go/bin
+export PATH="$PATH:$HOME/.rvm/bin"
+export PATH=/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin:$PATH
+export PATH=/Library/Frameworks/R.framework/Resources/bin/:$PATH
 export PATH=$PATH:/usr/local/mysql/bin
+export PATH="/usr/local/opt/gettext/bin:$PATH"
+
+# Alias
+alias v="mvim"
+alias vconf="mvim ~/.vimrc"
+alias zconf="mvim ~/.zshrc"
+alias tconf="mvim ~/.tmux.conf"
 
 # Plugins
 ZSH_THEME=""
@@ -13,6 +25,8 @@ HYPHEN_INSENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
 plugins=(
     zsh-syntax-highlighting
+    docker
+    docker-compose
     git
     extract
     history
@@ -30,13 +44,12 @@ prompt pure
 # Alias
 alias top="htop"
 alias c="clear"
-alias tmux-attach="tmux new-session -A -s main"
 
 # Functions
 mc()     { mkdir $1; cd $1; }
 cl()     { cd $1; ll; }
 backup() { cp $1{,.bak}; }
 
-# System specific
-source "${ZDOTDIR:-${HOME}}/.zshrc-`uname`"
+# Pyenv
+eval "$(pyenv init -)"
 

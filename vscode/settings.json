@@ -1,32 +1,29 @@
 {
     // Editor
     "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
 
     // Window
     "window.zoomLevel": 0,
     "window.restoreWindows": "none",
-    "workbench.iconTheme": "vscode-icons",
+
+    // Workbench
     "workbench.startupEditor": "none",
+    "workbench.colorTheme": "One Dark Pro",
     "workbench.colorCustomizations": {
+        "terminal.background": "#19191e",
         "statusBar.background": "#325a41",
         "statusBar.noFolderBackground": "#325a41",
-        "statusBar.debuggingBackground": "#325a41",
-        "terminal.background": "#19191e"
+        "statusBar.debuggingBackground": "#325a41"
     },
 
     // Terminal
-    "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
+    "terminal.integrated.fontFamily": "Consolas",
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.fontWeight": "normal",
     "terminal.external.osxExec": "iTerm.app",
     "terminal.explorerKind": "external",
-
-    // Python
-    "python.linting.enabled": false,
-
-    // Matlab
-    "matlab.mlintpath": "/Applications/MATLAB_R2017a.app/bin/maci64/mlint",
 
     // Vim
     "vim.statusBarColorControl": true,
@@ -42,9 +39,11 @@
 
     // Files
     "files.autoSave": "afterDelay",
-    "workbench.colorTheme": "One Dark Pro",
-    "editor.minimap.enabled": false,
-    "python.condaPath": "~/anaconda3/bin/python",
-    "ai.azureml.enable": false,
-    "ai.homepage.openOnStartup": false,
+
+    // Language
+    "python.linting.enabled": false,
+    "go.useLanguageServer": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

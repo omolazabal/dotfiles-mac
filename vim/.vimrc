@@ -1,38 +1,17 @@
 
-"=================================== Plugins =================================="
-call plug#begin('~/.vim/plugged')
-Plug 'airblade/vim-gitgutter'                 " Git info on gutter
-Plug 'tpope/vim-fugitive'                     " Git integration
-Plug 'tpope/vim-commentary'                   " Quick Commenting
-Plug 'ctrlpvim/ctrlp.vim'                     " Fuzzy file search
-Plug 'vim-airline/vim-airline'                " Status bar
-Plug 'terryma/vim-multiple-cursors'           " Multiple cursors
-Plug 'vim-airline/vim-airline-themes'         " Status bar themes
-Plug 'flazz/vim-colorschemes'                 " Color schemes
-Plug 'Valloric/ListToggle'                    " Toggle location list
-Plug 'scrooloose/nerdtree'                    " NerdTree
-call plug#end()
-
-
-"================================ Vim Settings ================================"
-filetype plugin on
-
 " Visual
 syntax enable
-colorscheme onedark
-set background=dark
-set colorcolumn=80
+colorscheme slate
 set number
-set relativenumber
 set cursorline
-if has('mac')
-    set guifont=Meslo\ LG\ S\ for\ Powerline:h12
-elseif has('unix')
-    set guifont=Meslo\ LG\ S\ for\ Powerline\ 10
-endif
+set relativenumber
+set guifont=Consolas:h11:cDEFAULT
+set guioptions-=T
 highlight Comment gui=italic
 
 " Editor
+set laststatus=2
+set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
 set nocompatible
 set showmode
 set nowrap
@@ -56,7 +35,8 @@ set splitbelow
 set splitright
 set scrolloff=5
 set completeopt-=preview
-set visualbell t_vb=
+set visualbell
+set t_vb=
 set hlsearch
 set guioptions=
 set guitablabel=\[%N\]\ %t\ %M
@@ -65,41 +45,6 @@ set guitablabel=\[%N\]\ %t\ %M
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType css setlocal shiftwidth=2 tabstop=2
 autocmd FileType php setlocal shiftwidth=2 tabstop=2
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
-autocmd BufRead *.asm set syntax=nasm
 autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead *.md,*.txt set wrap linebreak nolist
-autocmd BufEnter * sign define dummy
-autocmd BufEnter * execute 'sign place 9999 line=1 name=dummy buffer=' . bufnr('')
 
-
-"=============================== Plugin Settings =============================="
-"NerdTree
-nmap <Tab> :NERDTreeToggle<CR>
-
-" Airline
-let g:airline_powerline_fonts = 1
-
-" List Toggle
-let g:lt_location_list_toggle_map = '<leader>l'
-let g:lt_quickfix_list_toggle_map = '<leader>q'
-
-" CtrlP
-let g:ctrlp_prompt_mappings = {
-    \ 'ToggleType(1)':        ['<c-l>', '<c-up>'],
-    \ 'ToggleType(-1)':       ['<c-h>', '<c-down>'],
-    \ 'PrtCurLeft()':         ['<left>', '<c-^>'],
-    \ 'PrtCurRight()':        ['<right>'],
-    \ 'CreateNewFile()':      ['<c-n>'],
-    \ 'AcceptSelection("v")': ['<c-s>'],
-    \ 'AcceptSelection("h")': ['<c-x>'],
-    \ 'PrtHistory(-1)':       ['<c-y>']
-    \ }
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-
-"================================= Key Remaps ================================="
-" Vim Commands
-nnoremap <F1> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
-nnoremap <F2> :set spell!<CR>
