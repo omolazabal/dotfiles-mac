@@ -3,11 +3,7 @@
 syntax enable
 colorscheme slate
 set number
-set cursorline
 set relativenumber
-set guifont=Consolas:h11:cDEFAULT
-set guioptions-=T
-highlight Comment gui=italic
 
 " Editor
 set laststatus=2
@@ -38,13 +34,9 @@ set completeopt-=preview
 set visualbell
 set t_vb=
 set hlsearch
-set guioptions=
-set guitablabel=\[%N\]\ %t\ %M
 
 " Auto Commands
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType css setlocal shiftwidth=2 tabstop=2
-autocmd FileType php setlocal shiftwidth=2 tabstop=2
-autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead *.md,*.txt set wrap linebreak nolist
 

@@ -1,4 +1,1 @@
-git
-npm
-vscode
-zsh syntax highlighting
+ I'll probably update this with some useful content eventually

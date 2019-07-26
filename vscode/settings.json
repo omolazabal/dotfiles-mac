@@ -18,7 +18,6 @@
     },
 
     // Terminal
-    "terminal.integrated.fontFamily": "Consolas",
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.fontWeight": "normal",

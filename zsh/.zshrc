@@ -12,11 +12,6 @@ export PATH=/Library/Frameworks/R.framework/Resources/bin/:$PATH
 export PATH=$PATH:/usr/local/mysql/bin
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
-# Alias
-alias v="mvim"
-alias vconf="mvim ~/.vimrc"
-alias zconf="mvim ~/.zshrc"
-alias tconf="mvim ~/.tmux.conf"
 
 # Plugins
 ZSH_THEME=""
