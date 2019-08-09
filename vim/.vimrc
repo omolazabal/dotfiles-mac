@@ -3,8 +3,14 @@ set nocompatible
 
 " Visual
 syntax enable
-colorscheme slate
+colorscheme default
 set hlsearch
+
+" Menu
+set wildmenu
+set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
+set wildignore+=*.pdf,*.psd
+set wildignore+=node_modules/*,bower_components/*
 
 " Lines
 set number
@@ -59,9 +65,6 @@ set noerrorbells
 " Folding
 set foldmethod=indent
 set foldlevel=99
-
-" Flag whiteapce
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " Auto Commands
 autocmd FileType html,css setlocal shiftwidth=2 tabstop=2
