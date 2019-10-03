@@ -19,11 +19,13 @@ set showcmd
 set ruler
 set nowrap
 
+"Completion
+set completeopt=menu
+
 " Status bar
 set laststatus=2
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
 set showmode
-
 
 " Indentation
 set smartindent
@@ -66,7 +68,7 @@ set noerrorbells
 set foldmethod=indent
 set foldlevel=99
 
-" Auto Commands
+" Files
 autocmd FileType html,css setlocal shiftwidth=2 tabstop=2
 autocmd BufNewFile,BufRead *.md,*.txt set wrap linebreak nolist
 

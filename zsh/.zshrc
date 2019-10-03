@@ -12,6 +12,7 @@ export PATH=/Library/Frameworks/R.framework/Resources/bin/:$PATH
 export PATH=$PATH:/usr/local/mysql/bin
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
+source $HOME/.vars
 
 # Plugins
 ZSH_THEME=""
