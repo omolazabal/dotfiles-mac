@@ -20,6 +20,7 @@ DEFAULT_USER="oscar"
 HYPHEN_INSENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
 plugins=(
+    zsh-autosuggestions
     zsh-syntax-highlighting
     docker
     docker-compose
@@ -37,13 +38,8 @@ source $ZSH/oh-my-zsh.sh
 autoload -U promptinit; promptinit
 prompt pure
 
-# Alias
-alias top="htop"
-alias c="clear"
-
 # Functions
-mc()     { mkdir $1; cd $1; }
-cl()     { cd $1; ll; }
+mkcdir() { mkdir $1; cd $1; }
 backup() { cp $1{,.bak}; }
 
 # Pyenv
