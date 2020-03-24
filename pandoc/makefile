@@ -26,7 +26,12 @@ $(output)/%.pdf: $(source)/%.md
 		-f markdown  $< \
 		-o $@
 
-.PHONY : clean
+.PHONY : clean init
 
+# Remove all output files
 clean:
 	rm -f $(output)/*.pdf
+
+# Create directories
+init:
+	mkdir -p $(source) $(output)
