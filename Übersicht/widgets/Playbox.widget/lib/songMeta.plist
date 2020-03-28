@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>albumName</key>
+	<string>ASCEND</string>
+	<key>artistName</key>
+	<string>ILLENIUM</string>
+	<key>coverURL</key>
+	<string>https://i.scdn.co/image/ab67616d0000b273529c6fa82d23f65076c1579b</string>
+	<key>currentPosition</key>
+	<string>199</string>
+	<key>isLoved</key>
+	<string>false</string>
+	<key>oldFilename</key>
+	<string>NA</string>
+	<key>songChanged</key>
+	<string>false</string>
+	<key>songDuration</key>
+	<string>295</string>
+	<key>songName</key>
+	<string>Pray (feat. Kameron Alexander)</string>
+</dict>
+</plist>
