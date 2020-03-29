@@ -13,7 +13,7 @@ otherMonths: true
 refreshFrequency: 3600000
 
 style: """
-  bottom: 85px
+  top: 10px
   right: 10px
   color: #fff
   font-family: Helvetica Neue

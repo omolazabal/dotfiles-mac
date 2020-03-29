@@ -39,8 +39,8 @@ const config = {
     /* Temperature unit, either 'C' or 'F' */
     tempUnit: 'C',
     /* Widget position (absolute) */
-    top: '810px',
-    left: '1215px',
+    top: '10px',
+    left: '10px',
     /* Stat position */
     width: '72',
     height: '40',

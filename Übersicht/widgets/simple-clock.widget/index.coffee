@@ -4,7 +4,7 @@ stylingOptions =
   # show fullscreen -> true
   fullscreen: true
   # display position 'top', 'middle', 'bottom'
-  vertical: 'middle'
+  vertical: 'bottom'
 
 dateOptions =
   # display not only 'time' also 'date'

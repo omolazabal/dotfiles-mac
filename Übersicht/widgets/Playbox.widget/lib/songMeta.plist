@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>albumName</key>
-	<string>ASCEND</string>
+	<string>Go Time</string>
 	<key>artistName</key>
-	<string>ILLENIUM</string>
+	<string></string>
 	<key>coverURL</key>
-	<string>https://i.scdn.co/image/ab67616d0000b273529c6fa82d23f65076c1579b</string>
+	<string>https://i.scdn.co/image/18d9cacf366a7173b10204eb983fe5d374b728dd</string>
 	<key>currentPosition</key>
-	<string>199</string>
+	<string>2385</string>
 	<key>isLoved</key>
 	<string>false</string>
 	<key>oldFilename</key>
@@ -17,8 +17,8 @@
 	<key>songChanged</key>
 	<string>false</string>
 	<key>songDuration</key>
-	<string>295</string>
+	<string>4</string>
 	<key>songName</key>
-	<string>Pray (feat. Kameron Alexander)</string>
+	<string>The Zen of Go</string>
 </dict>
 </plist>
