@@ -7,4 +7,6 @@ header-includes:
   - \setlist[itemize]{label=$\cdot$}
   - \setlist[itemize,1]{label=\textbullet}
   - \setlist[itemize,2]{label=--}
+include-before:
+- '`\newpage{}`{=latex}'
 ---
