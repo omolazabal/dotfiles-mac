@@ -41,6 +41,7 @@ prompt pure
 # Functions
 mkcdir() { mkdir $1; cd $1; }
 backup() { cp $1{,.bak}; }
+paninit() { cp ~/dotfiles/pandoc/* .; make init;}
 
 # Pyenv
 eval "$(pyenv init -)"
