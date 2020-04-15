@@ -50,6 +50,9 @@ mux() {
     tmux attach || tmux attach;
 }
 
+# Alias
+alias ngrok=$HOME/.ngrok2/ngrok
+
 # Pyenv
 eval "$(pyenv init -)"
 
