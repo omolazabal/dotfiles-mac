@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>albumName</key>
-	<string>Go Time</string>
+	<string>Find Another Way</string>
 	<key>artistName</key>
-	<string></string>
+	<string>Seven Lions</string>
 	<key>coverURL</key>
-	<string>https://i.scdn.co/image/18d9cacf366a7173b10204eb983fe5d374b728dd</string>
+	<string>https://i.scdn.co/image/ab67616d0000b27324c75674f34d9e1a347c16df</string>
 	<key>currentPosition</key>
-	<string>2385</string>
+	<string>7</string>
 	<key>isLoved</key>
 	<string>false</string>
 	<key>oldFilename</key>
@@ -17,8 +17,8 @@
 	<key>songChanged</key>
 	<string>false</string>
 	<key>songDuration</key>
-	<string>4</string>
+	<string>313</string>
 	<key>songName</key>
-	<string>The Zen of Go</string>
+	<string>Remember</string>
 </dict>
 </plist>
