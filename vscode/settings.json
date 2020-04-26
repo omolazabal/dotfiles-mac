@@ -1,30 +1,20 @@
-{
-    // Editor
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
-
-    // Window
     "window.zoomLevel": 0,
     "window.restoreWindows": "none",
-
-    // Workbench
     "workbench.startupEditor": "none",
     "workbench.colorTheme": "One Dark Pro",
     "workbench.colorCustomizations": {
         "terminal.background": "#19191e",
-        "statusBar.background": "#325a41",
-        "statusBar.noFolderBackground": "#325a41",
-        "statusBar.debuggingBackground": "#325a41"
+        "statusBar.background": "#2b3666",
+        "statusBar.noFolderBackground": "#2b3666",
+        "statusBar.debuggingBackground": "#2b3666"
     },
-
-    // Terminal
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.fontWeight": "normal",
     "terminal.external.osxExec": "iTerm.app",
     "terminal.explorerKind": "external",
-
-    // Vim
     "vim.statusBarColorControl": true,
     "vim.cmdLineInitialColon": true,
     "vim.statusBarColors": {
@@ -35,14 +25,8 @@
         "visualblock": "#86592d",
         "replace": "#000000"
     },
-
-    // Files
     "files.autoSave": "afterDelay",
-
-    // Language
     "python.linting.enabled": false,
     "go.useLanguageServer": true,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    "git.confirmSync": false
 }
