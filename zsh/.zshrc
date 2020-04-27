@@ -3,6 +3,7 @@
 export PATH=$PATH:~/.local/bin
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
+export NPM_CONFIG_PREFIX=$HOME/.npm-global
 
 export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
 export PATH=$PATH:/usr/local/go/bin
