@@ -3,15 +3,15 @@
 export PATH=$PATH:~/.local/bin
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
-export NPM_CONFIG_PREFIX=$HOME/.npm-global
-
 export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
-export PATH=$PATH:/usr/local/go/bin
-export PATH="$PATH:$HOME/.rvm/bin"
 export PATH=/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin:$PATH
 export PATH=/Library/Frameworks/R.framework/Resources/bin/:$PATH
 export PATH=$PATH:/usr/local/mysql/bin
+export PATH=$PATH:/usr/local/go/bin
 export PATH="/usr/local/opt/gettext/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export NPM_CONFIG_PREFIX=$HOME/.npm-global
+export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
 
 # Plugins
 ZSH_THEME=""
@@ -38,16 +38,8 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # Functions
-mkcdir() { mkdir $1; cd $1; }
 backup() { cp $1{,.bak}; }
 paninit() { cp ~/dotfiles/pandoc/* .; make init;}
-mux() {
-    pgrep -vxq tmux;
-    tmux new -d -s delete-me;
-    tmux run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh;
-    tmux kill-session -t delete-me;
-    tmux attach || tmux attach;
-}
 
 # Alias
 alias ngrok=$HOME/.ngrok2/ngrok
